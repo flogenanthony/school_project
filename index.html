@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GAME SHOP</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        color: white;
+        -webkit-text-stroke: 2px black;
+      }
+      h5 {
+        color: white;
+        -webkit-text-stroke: 1px black;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  
+  <body>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <img src="images/logo.png" alt="logo" height="40" width="50" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarcontent"
+          aria-controls="navbarcontent"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <img src="images/menu.png" alt="" height="35px" class="menu">
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarcontent">
+          <ul class="navbar-nav mt-2 ml-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-warning"
+                href="homepage.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-warning"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                PRODUCTS
+              </a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-warning" href="#cp">Gaming Phone</a>
+                <a class="dropdown-item text-warning" href="#lt">Gaming Laptop</a>
+                <a class="dropdown-item text-warning" href="#pc">Gaming pc</a>
+                <a class="dropdown-item text-warning" href="#console">Game Console</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#contact">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--video background-->
+    <div
+      id="video-carousel-example"
+      class="carousel slide carousel-fade"
+      data-ride="caraousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#video-carousel-example"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#video-carousel-example" data-slide-to="1"></li>
+        <li data-target="#video-carousel-example" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="height: 610px">
+          <video class="video-fluid responsive" autoplay loop muted>
+            <source src="images/wall2.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption ">
+            <img src="images/logo2.png" alt="logo" height="150px" />
+            <h1 class="font-weight-bold">The Best Game Store Out There</h1>
+            <h5>
+              GameHub is one of the top stores out there, we have a huge selection
+              of high-quality and long-lasting gaming devices, and all of our
+              products are authentic and reliable.
+            </h5>
+            <a href="products.html" class="btn" role="button" style="background-color: purple; color: white;"
+              >SHOP NOW</a
+            >
+          </div>
+        </div>
+
+        <div class="carousel-item" style="height: 610px">
+          <video class="video-fluid responsive" autoplay loop muted>
+            <source src="images/wall1.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption">
+            <img src="images/logo2.png" alt="logo" height="150px" />
+            <h1 class="font-weight-bold">Get Started</h1>
+            <h5>
+              Click now to begin your desired new gaming experience. 
+              You'll like it, and I'm confident that your gadget won't lag or give you any trouble.
+            </h5>
+            <a href="products.html" class="btn" role="button" style="background-color: purple; color: white;"
+              >SHOP NOW</a
+            >
+          </div>
+        </div>
+
+        <div class="carousel-item" style="height: 610px">
+          <video class="video-fluid responsive" autoplay loop muted>
+            <source src="images/wall3.mp4" type="video/mp4" />
+          </video>
+          <div class="carousel-caption">
+            <img src="images/logo2.png" alt="logo" height="150px" />
+            <h1 class="font-weight-bold">The Power Of Gaming</h1>
+            <h5>
+              They are simple to use, don't need updates, and 
+              allow for convenient multiplayer with those who own consoles.
+            </h5>
+            <a href="products.html" class="btn" role="button" style="background-color: purple; color: white;"
+              >SHOP NOW</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="carousel-control-prev"
+        href="#video-carousel-example"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a
+        class="carousel-control-next"
+        href="#video-carousel-example"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!--products-->
+    <div class="container-fluid" id="cp">
+      <hr style="margin-top: 0px"/>
+      <h2 style="margin-top: 80px">Gaming Phones</h2>
+      <p>We've got you covered with our list of the best gaming phones you can buy</p>            
+      <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Brand</th>
+            <th>Memory</th>
+            <th>Performance</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asus ROG Phone 5</td>
+            <td>128GB 8GB ROM-512GB 16GB RAM</td>
+            <td> CPU Octa-core (1x2.84 GHz Kryo 680 & 3x2.42 GHz Kryo 680 & 4x1.80 GHz Kryo 680)/GPU Adreno 660</td>
+            <td>₱49,995.00-₱75,494.00</td>
+          </tr>
+          <tr>
+            <td>Lenovo Legion Phone Duel 2</td>
+            <td>256GB 12GB ROM-512GB 16GB RAM</td>
+            <td>CPU Octa-core (1x2.84 GHz Kryo 680 & 3x2.42 GHz Kryo 680 & 4x1.80 GHz Kryo 680)/GPU Adreno 660</td>
+            <td>₱39,995.00-₱49,995.00</td>
+          </tr>
+          <tr>
+            <td>Black Shark 4 series.</td>
+            <td>128GB 6GB ROM-256GB 12GB RAM</td>
+            <td>CPU Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.80 GHz Kryo 585)/GPU Adreno 650</td>
+            <td>₱19,990.00-₱47,610.00</td>
+          </tr>
+          <tr>
+            <td>OnePlus 10 Pro</td>
+            <td>128GB 8GB ROM-512GB 12GB RAM</td>
+            <td>CPU Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510)/GPU Adreno 730</td>
+            <td>₱48,990</td>
+          </tr>
+          <tr>
+            <td>Samsung Galaxy S22 series</td>
+            <td>128GB 8GB ROM-256GB 8GB RAM</td>
+            <td>CPU Octa-core (1x2.8 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.8 GHz Cortex-A510) - Europe/GPU Xclipse 920 - Europe</td>
+            <td>₱48,990-₱80,990</td>
+          </tr>
+          <tr>
+            <td>Xiaomi 12 series</td>
+            <td>128GB 8GB ROM-256GB 12GB RAM</td>
+            <td>CPU Octa-core (1x3.00 GHz Cortex-X2 & 3x2.50 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510)/GPU Adreno 730</td>
+            <td>₱48,999</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="phone.html" class="btn" role="button" style="margin-left: 550px; background-color: purple; color: white;"
+              >SHOP NOW</a
+            >
+    </div>  
+    <div class="container-fluid" id="lt">
+      <hr/>
+      <h2 style="margin-top: 80px">Gaming Laptop</h2>
+      <p>Best gaming laptops</p>            
+      <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Brand</th>
+            <th>Processor</th>
+            <th>Graphics</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Razer Blade 15</td>
+            <td>2.3GHz Intel Core i7-10875H (8-core, 16MB cache, up to 5.1GHz)</th>
+            <td>Nvidia GeForce RTX 200 Super Max-Q (8GB GDDR6)</th>
+            <td>₱113,352.00-₱289,512.00</th>
+          </tr>
+          <tr>
+            <td>Lenovo Legion 5 Pro</td>
+            <td>AMD Ryzen™ 7 5800H Processor (3.20 GHz, up to 4.40 GHz Max Boost, 8 Cores, 16 Threads, 16 MB Cache)</td>
+            <td>NVIDIA® GeForce® RTX™ 3060 6GB</td>
+            <td>₱88,995.00-₱118,995.00</td>
+          </tr>
+          <tr>
+            <td>Asus ROG Zephyrus G14</td>
+            <td>AMD Ryzen™ 7 4800HS Mobile Processor (8-core/16-thread, 12MB Cache, 4.2 GHz max boost)</td>
+            <td>NVIDIA® GeForce® GTX 1650 4GB GDDR6</td>
+            <td>₱41,000.00-₱132,649.9800</td>
+          </tr>
+          <tr>
+            <td>Acer Predator Helios 300</td>
+            <td>Intel Core i7-11800H processor Hexa-core 2.60</td>
+            <td>NVIDIA® GeForce RTX™ 2060 with 6 GB</td>
+            <td>₱57,999.00-₱106,899.00</td>
+          </tr>
+          <tr>
+            <td>Asus ROG Strix Scar 17</td>
+            <td>AMD Ryzen™ 9 5900HX Mobile Processor (8-core/16-thread, 20MB cache, up to 4.6 GHz max boost)</td>
+            <td>NVIDIA® GeForce RTX™ 3080 Laptop GPU With ROG Boost up to 1645MHz at 115W (130W with Dynamic Boost) 16GB GDDR6</td>
+            <td>₱134,995.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="laptop.html" class="btn" role="button" style="margin-left: 550px; background-color: purple; color: white;"
+              >SHOP NOW</a
+            >
+    </div>
+    <div class="container-fluid" id="pc">
+      <hr/>
+      <h2 style="margin-top: 80px">Gaming PC</h2>
+      <p>The .table-hover class adds a hover effect (grey background color) on table rows:</p>            
+      <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Brand</th>
+            <th>Processor</th>
+            <th>Graphics</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alienware Aurora R13</td>
+            <td>12 Gen Intel® Core™ i7-12700F (25 MB cache, 12 cores, 20 threads, 2.10 GHz to 5.00 GHz Turbo)</td>
+            <td>NVIDIA® GeForce RTX™ 3060 Ti, 8 GB GDDR6, LHR</td>
+            <td>₱199,995.00</td>
+          </tr>
+          <tr>
+            <td>Acer predator orion 3000</td>
+            <td>2.9GHz Intel Core i7-10700</td>
+            <td>NVIDIA GeForce GTX 1070 (8GB GDDR5)</td>
+            <td>₱86,700.00</td>
+          </tr>
+          <tr>
+            <td>ASUS ROG Strix GL510DH</td>
+            <td>AMD Ryzen 5 3400G 512GB</td>
+            <td>Nvidia GeForce RTX 2060 6GB</td>
+            <td>₱82,376.00</td>
+          </tr>
+          <tr>
+            <td>DELL Alienware Aurora R7</td>
+            <td>Intel Core i5-8400 1TB</td>
+            <td>Nvidia GeForce RTX 2060 6GB</td>
+            <td>₱209,744.00</td>
+          </tr>
+          <tr>
+            <td>DELL Alienware Aurora Ryzen Edition R10</td>
+            <td>AMD Ryzen 7 3700X 512GB</td>
+            <td>NVIDIA GeForce GTX 1070 (8GB GDDR5)</td>
+            <td>₱100,813.45</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="pc.html" class="btn" role="button" style="margin-left: 550px; background-color: purple; color: white;"
+              >SHOP NOW</a
+            >
+    </div> 
+    <div class="container-fluid" id="console">
+      <hr/>
+      <h2 style="margin-top: 80px">Gaming Console</h2>
+      <p>Best gaming console</p>            
+      <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Brand</th>
+            <th>Processor</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>XBOX SERIES X</td>
+            <td>12 Teraflops processing power</td>
+            <td>₱31,990.00</td>
+          </tr>
+          <tr>
+            <td>PlayStation 5</td>
+            <td>3.5GHz, 8-core AMD Zen 2</td>
+            <td>₱31,990.00</td>
+          </tr>
+          <tr>
+            <td>Nintendo Switch™-OLED Model</td>
+            <td>NVIDIA Custom Tegra processor</td>
+            <td>₱31,990.00</td>
+          </tr>
+          <tr>
+            <td>PlayStation 2</td>
+            <td>NVIDIA® Tegra® X1 processor with a 256-core GPU and 3 GB RAM</td>
+            <td>₱16,988.00</td>
+          </tr>
+          <tr>
+            <td>Nintendo Switch</td>
+            <td>ARM 4 Cortex-A57 cores @ 1.02 GHz</td>
+            <td>₱16,499.00</td>
+          </tr>
+          <tr>
+            <td>PlayStation 4 Pro</td>
+            <td>x86-64 AMD “Jaguar”, 8 cores</td>
+            <td>₱24,690.00</td>
+          </tr>
+          <tr>
+            <td>Sony's PlayStation Classic</td>
+            <td>MediaTek MT8167A SoC processor</td>
+            <td>₱6,495</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="console.html" class="btn" role="button" style="margin-left: 550px; background-color: purple; color: white;"
+              >SHOP NOW</a
+            >
+    </div> 
+
+    <!--info-->
+    <div id="about" class="float-container">
+      <div class="float-child">
+        <h2 style="margin-top: 80px">About Us</h2>
+        <p>
+          In the Philippines, GameHub Store is one of the most popular 
+          sellers of games, gadgets, and accessories. We always make 
+          sure to have the most up-to-date and in-demand consoles, games, 
+          and devices available in our store at a reasonable price. 
+          We are dedicated to providing a simple, stress-free transaction 
+          well as excellent customer service. Your gaming requirements are 
+          only a single click away. Almost all of the necessary actions 
+          can be completed right here! You can also browse products from 
+          anywhere and at any time.
+        </p>
+      </div>
+      <div class="float-child">
+        <h2 style="margin-top: 80px">FAQ</h2>
+        <button class="accordion">How can I order?</button>
+          <div class="panel">
+            <p>
+              You can order easily using our online platform. When you find 
+              a product you need, you can add it to cart, login and go through 
+              the ordering process. After the order is ready, you will receive 
+              order summary to your email. Order summary will also be stored 
+              to your account.
+            </p>
+          </div>
+         <button class="accordion">What payment methods can I use?</button>
+          <div class="panel">
+            <p>
+              You can use all the major credit cards.
+            </p>
+          </div>
+        <button class="accordion">Can I cancel my order?</button>
+          <div class="panel">
+            <p>
+              If you want to cancel your order, please do so as soon as possible. 
+              If we have already processed your order, you need to contact us and 
+              return the product. Please contact gamehub@gmail.com.
+            </p>
+          </div>
+          <button class="accordion">Shipping time?</button>
+          <div class="panel">
+            <p>
+              Shipping time will be confirmed on the order confirmation document.
+            </p>
+          </div>
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } 
+              else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        </script>
+      </div>
+    </div>
+
+      <div id="contact" class="container text-center">
+        <h2 style="margin-top: 500px">Contact Us</h2>
+        <p><em>Please  send me your honest comment about the store</em></p>
+        <br>
+
+        <form>
+          <div class="form-outline mb-4">
+            <input type="text" id="form4Example1" class="form-control" />
+            <label class="form-label" for="form4Example1">Name</label>
+          </div>
+          <div class="form-outline mb-4">
+            <input type="email" id="form4Example2" class="form-control" />
+            <label class="form-label" for="form4Example2">Email address</label>
+          </div>
+          <div class="form-outline mb-4">
+            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+            <label class="form-label" for="form4Example3">Message</label>
+          </div>
+          <div class="form-check justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+            <label class="form-check-label" for="form4Example4">
+              Send me a copy of this message
+            </label>
+          </div>
+          <button type="submit" class="btn btn-block mb-4" style="background-color: purple; color: white;">Send</button>
+        </form>
+      </div>
+      <div class="row bg-warning">
+        <div class="col-sm-3">
+          <p class="text-center"><strong>Email</strong></p>
+            <img src="images/gmail.png" alt="email" height="50px">           
+          <div>
+            <p>gamehub@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <p class="text-center"><strong>Facebook</strong></p>
+            <img src="images/fb.png" alt="facebook" height="50px">           
+          <div>
+            <p>gamehub.fb.com</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <p class="text-center"><strong>Twitter</strong></p>
+            <img src="images/twitter.png" alt="twitter" height="50px">           
+          <div>
+            <p>@game_hub</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <p class="text-center"><strong>Instagram</strong></p>
+            <img src="images/ig.png" alt="instagram" height="50px">           
+          <div>
+            <p>@gamehub</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

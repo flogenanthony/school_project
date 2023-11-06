@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PRODUCTS</title>
+    <style>
+      h1 {
+        color: white;
+        -webkit-text-stroke: 2px black;
+      }
+      h2,
+      p {
+        text-align: center;
+      }
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        padding: 25px 10px;
+      }
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .col:hover .image {
+        opacity: 0.3;
+      }
+      .col:hover .middle {
+        opacity: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+
+  <body>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid">
+        <img src="images/logo.png" alt="logo" height="40" width="50" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarcontent"
+          aria-controls="navbarcontent"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <img src="images/menu.png" alt="" height="35px" class="menu" />
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarcontent"
+        >
+          <ul class="navbar-nav mt-2 ml-4" style="font-size: 15px">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#contact">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- jumbotron -->
+    <div
+      class="jumbotron jumbotron-fluid"
+      style="background-image: url(images/pic1.jpg)"
+    >
+      <div class="container" style="margin-top: 10px">
+        <h1 class="text-white font-weight-bold" style="text-align: center">
+          Welcome to GameHub.ph
+        </h1>
+        <p class="text-white" style="text-align: center">
+          We want to improve your gaming experience
+        </p>
+      </div>
+    </div>
+
+    <!--body-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active" style="height: 350px">
+        <video class="video-fluid responsive" autoplay loop muted>
+          <source src="images/wall4.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="images/cp.jpg" alt="" class="image" />
+          <a
+            href="phone.html"
+            class="btn middle btn-sm"
+            role="button"
+            style="background-color: purple; color: white"
+            >Gaming Phone</a
+          >
+        </div>
+        <div class="col">
+          <img src="images/lt.jpg" alt="" class="image img-fluid" />
+          <a
+            href="laptop.html"
+            class="btn middle btn-sm"
+            role="button"
+            style="background-color: purple; color: white"
+            >Gaming Laptop</a
+          >
+        </div>
+        <div class="col">
+          <img src="images/dt.jpg" alt="" class="image" />
+          <a
+            href="pc.html"
+            class="btn middle btn-sm"
+            role="button"
+            style="background-color: purple; color: white"
+            >Gaming PC</a
+          >
+        </div>
+        <div class="col">
+          <img src="images/console.jpg" alt="" class="image" />
+          <a
+            href="console.html"
+            class="btn middle btn-sm"
+            role="button"
+            style="background-color: purple; color: white"
+            >Game Console</a
+          >
+        </div>
+      </div>
+      <!--alert-->
+      <div class="alert alert-dark alert-dismissible fade show btn-sm">
+        <button type="button" class="close" data-dismiss="alert">
+          &times;
+        </button>
+        <strong>Info!</strong> Sorry, Items are not available right now.
+      </div>
+    </div>
+    <!--info-->
+    <div id="about" class="float-container">
+      <div class="float-child">
+        <h2 style="margin-top: 80px">About Us</h2>
+        <p>
+          In the Philippines, GameHub Store is one of the most popular sellers
+          of games, gadgets, and accessories. We always make sure to have the
+          most up-to-date and in-demand consoles, games, and devices available
+          in our store at a reasonable price. We are dedicated to providing a
+          simple, stress-free transaction well as excellent customer service.
+          Your gaming requirements are only a single click away. Almost all of
+          the necessary actions can be completed right here! You can also browse
+          products from anywhere and at any time.
+        </p>
+      </div>
+      <div class="float-child">
+        <h2 style="margin-top: 80px">FAQ</h2>
+        <button class="accordion">How can I order?</button>
+        <div class="panel">
+          <p>
+            You can order easily using our online platform. When you find a
+            product you need, you can add it to cart, login and go through the
+            ordering process. After the order is ready, you will receive order
+            summary to your email. Order summary will also be stored to your
+            account.
+          </p>
+        </div>
+        <button class="accordion">What payment methods can I use?</button>
+        <div class="panel">
+          <p>You can use all the major credit cards.</p>
+        </div>
+        <button class="accordion">Can I cancel my order?</button>
+        <div class="panel">
+          <p>
+            If you want to cancel your order, please do so as soon as possible.
+            If we have already processed your order, you need to contact us and
+            return the product. Please contact gamehub@gmail.com.
+          </p>
+        </div>
+        <button class="accordion">Shipping time?</button>
+        <div class="panel">
+          <p>
+            Shipping time will be confirmed on the order confirmation document.
+          </p>
+        </div>
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        </script>
+      </div>
+    </div>
+
+    <div id="contact" class="container text-center">
+      <h2 style="margin-top: 500px">Contact Us</h2>
+      <p><em>Please send me your honest comment about the store</em></p>
+      <br />
+
+      <form>
+        <div class="form-outline mb-4">
+          <input type="text" id="form4Example1" class="form-control" />
+          <label class="form-label" for="form4Example1">Name</label>
+        </div>
+        <div class="form-outline mb-4">
+          <input type="email" id="form4Example2" class="form-control" />
+          <label class="form-label" for="form4Example2">Email address</label>
+        </div>
+        <div class="form-outline mb-4">
+          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          <label class="form-label" for="form4Example3">Message</label>
+        </div>
+        <div class="form-check justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form4Example4"
+            checked
+          />
+          <label class="form-check-label" for="form4Example4">
+            Send me a copy of this message
+          </label>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-block mb-4"
+          style="background-color: purple; color: white"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+    <div class="row bg-warning">
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Email</strong></p>
+        <img src="images/gmail.png" alt="email" height="50px" />
+        <div>
+          <p>gamehub@gmail.com</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Facebook</strong></p>
+        <img src="images/fb.png" alt="facebook" height="50px" />
+        <div>
+          <p>gamehub.fb.com</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Twitter</strong></p>
+        <img src="images/twitter.png" alt="twitter" height="50px" />
+        <div>
+          <p>@game_hub</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Instagram</strong></p>
+        <img src="images/ig.png" alt="instagram" height="50px" />
+        <div>
+          <p>@gamehub</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

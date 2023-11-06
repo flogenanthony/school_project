@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GAMING LAPTOP</title>
+    <style>
+      h1 {
+        color: white;
+        -webkit-text-stroke: 2px black;
+      }
+      button{
+        border: none;
+        outline: 0;
+        padding: 10px;
+        color: white;
+        background-color: rgb(72, 72, 72);
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        transition: transform .2s;
+      }
+      .card:hover {
+        transform: scale(1.1);
+      }
+      .price {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      button.highlight{
+        background: rgb(199, 0, 202);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".b1").click(function(){
+          alert("Sorry! This item is not available right now");
+        });
+      });
+      $(document).ready(function(){
+        $("button").mouseenter(function(){
+          $(this).addClass("highlight")
+        });
+        $("button").mouseleave(function(){
+          $(this).removeClass("highlight")
+        });
+      });
+      $(document).ready(function(){
+        $("#bot").click(function(){
+          $(".col-4").toggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--jumbotron-->
+    <div
+    class="jumbotron jumbotron-fluid"
+    style="background-image: url(images/pic3.jpg)"
+  >
+    <div class="container" style="padding-bottom: 0;">
+      <h1 class="text-white font-weight-bold" style="text-align: center">
+        Welcome to GameStore.ph
+      </h1>
+      <p class="text-white" style="text-align: center">
+        We want to improve your gaming experience
+      </p>
+      <button id="bot">Click here to hide/show other products</button>
+      <div class="row" style="padding-bottom: 0;">
+        <div class="col-4"><a href="phone.html"><button>Gaming Phone</button></a><hr></div>
+        <div class="col-4"><a href="pc.html"><button>Gaming PC</button></a><hr></div>
+        <div class="col-4"><a href="console.html"><button>Game Console</button></a><hr></div>
+      </div>
+    </div>
+    <!--product-->
+  </div>
+    <div>
+      <a href="products.html"><img src="images/back.png" alt="back" height="47px" style="margin-left: 60px;"></a>
+      <a href="index.html"><img src="images/home.png" alt="home" height="60px" style="margin-left: 20px;"></a>
+      <h1 style="text-align: center; color: black;">GAMING LAPTOP</h1>
+      <div class="row">
+        <div class="col-3 card" style="background-color: rgba(169, 169, 169, 0.289);">
+          <img src="images/lt1.jpg" alt="asus" style="width: 100%" />
+          <h3>Razer Blade 15</h3>
+          <p class="price">₱113,352.00-₱289,512.00</p>
+          <p>2.3GHz Intel Core i7-10875H/Nvidia GeForce RTX 200 Super Max-Q</p>
+          <p><button class="b1">Add to Cart</button></p>
+        </div>
+        <div class="col-3 card" style="background-color: rgba(169, 169, 169, 0.289);">
+          <img src="images/lt2.jpg" alt="lenovo" style="width: 100%" />
+          <h4>Lenovo Legion 5 Pro</h4>
+          <p class="price">₱88,995.00-₱118,995.00</p>
+          <p>AMD Ryzen™ 7 5800H Processor/NVIDIA® GeForce® RTX™ 3060 6GB</p>
+          <p><button class="b1">Add to Cart</button></p>
+        </div>
+        <div class="col-3 card" style="background-color: rgba(169, 169, 169, 0.289);">
+          <img src="images/lt3.jpg" alt="black shark" style="width: 100%" />
+          <h4>Acer Predator Helios 300</h4>
+          <p class="price">₱57,999.00-₱106,899.00</p>
+          <p>Intel Core i7-11800H processor Hexa-core 2.60/NVIDIA® GeForce RTX™ 2060</p>
+          <p><button class="b1">Add to Cart</button></p>
+        </div>
+      <div class="row">
+        <div class="col-3 card" style="background-color: rgba(169, 169, 169, 0.289);">
+          <img src="images/lt4.jpg" alt="one plus" style="width: 100%" />
+          <h3>Asus ROG Strix Scar 17</h3>
+          <p class="price">₱134,995.00</p>
+          <p>AMD Ryzen™ 9 5900HX Processor/NVIDIA® GeForce RTX™ 3080</p>
+          <p><button class="b1">Add to Cart</button></p>
+        </div>
+        <div class="col-3 card" style="background-color: rgba(169, 169, 169, 0.289);">
+          <img src="images/lt5.jpg" alt="samsung" style="width: 100%" />
+          <h4>Asus ROG Zephyrus G14</h4>
+          <p class="price">₱41,000.00-₱132,649.9800</p>
+          <p>AMD Ryzen™ 7 4800HS Mobile Processor/NVIDIA® GeForce® GTX 1650 4GB GDDR6</p>
+          <p><button class="b1">Add to Cart</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="background-color: rgb(193, 0, 193);">
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Email</strong></p>
+        <img src="images/gmail.png" alt="email" height="50px" />
+        <div>
+          <p>gamehub@gmail.com</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Facebook</strong></p>
+        <img src="images/fb.png" alt="facebook" height="50px" />
+        <div>
+          <p>gamehub.fb.com</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Twitter</strong></p>
+        <img src="images/twitter.png" alt="twitter" height="50px" />
+        <div>
+          <p>@game_hub</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Instagram</strong></p>
+        <img src="images/ig.png" alt="instagram" height="50px" />
+        <div>
+          <p>@gamehub</p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
